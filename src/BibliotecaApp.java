@@ -49,7 +49,7 @@ public class BibliotecaApp {
         System.out.print("Opción: ");
     }
 
-    private void registrarLibroDesdeConsola(Scanner scanner) {
+    private void registrarLibroDesdeConsola(Scanner scanner)  {
         System.out.print("ISBN: ");
         String isbn = scanner.next();
         System.out.print("Título: ");
