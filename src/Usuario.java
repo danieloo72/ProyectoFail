@@ -67,8 +67,6 @@ public class Usuario {
             if (prestamosActivos.size() <= maximoPrestamosSimultaneos) {
                 if (prestamosActivos.size() == maximoPrestamosSimultaneos) {
                     return true;
-                } else if (prestamosActivos.size() > maximoPrestamosSimultaneos) {
-                    return true;
                 } else {
                     return false;
                 }

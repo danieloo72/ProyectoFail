@@ -20,16 +20,32 @@ public class Prestamo {
         return usuario;
     }
 
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
     public Libro getLibro() {
         return libro;
+    }
+
+    public void setLibro(Libro libro) {
+        this.libro = libro;
     }
 
     public LocalDate getFechaInicio() {
         return fechaInicio;
     }
 
+    public void setFechaInicio(LocalDate fechaInicio) {
+        this.fechaInicio = fechaInicio;
+    }
+
     public LocalDate getFechaFinEstimada() {
         return fechaFinEstimada;
+    }
+
+    public void setFechaFinEstimada(LocalDate fechaFinEstimada) {
+        this.fechaFinEstimada = fechaFinEstimada;
     }
 
     public boolean isDevuelto() {
@@ -41,6 +57,7 @@ public class Prestamo {
         libro.devolver();
     }
 
+    //Refactorizar y corregir
     public int calcularRetrasoEnDias(LocalDate hoy) {
         int dias = 0;
         if (hoy == null) {

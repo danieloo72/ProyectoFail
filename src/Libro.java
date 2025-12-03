@@ -8,13 +8,13 @@ public class Libro {
     private int ejemplaresTotales;
     private int ejemplaresDisponibles;
 
-    public Libro(String isbn, String titulo, String autor, int anioPublicacion, int ejemplaresTotales) {
+    public Libro(String isbn, String titulo, String autor, int anioPublicacion, int ejemplaresTotales,  int ejemplaresDisponibles) {
         this.isbn = isbn;
         this.titulo = titulo;
         this.autor = autor;
         this.anioPublicacion = anioPublicacion;
         this.ejemplaresTotales = ejemplaresTotales;
-        this.ejemplaresDisponibles = ejemplaresTotales;
+        this.ejemplaresDisponibles = ejemplaresDisponibles;
     }
 
     public String getIsbn() {
