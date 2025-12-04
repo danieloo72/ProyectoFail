@@ -77,9 +77,10 @@ public class BibliotecaApp {
         servicio.registrarUsuario(usuario);
     }
 
-    private void prestarLibroDesdeConsola(Scanner scanner) {
+    private void prestarLibroDesdeConsola(Scanner scanner, Usuario usuario) {
         System.out.print("ID usuario: ");
         String id = scanner.next();
+        if (usuario == id)
         System.out.print("ISBN libro: ");
         String isbn = scanner.next();
 

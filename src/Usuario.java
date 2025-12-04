@@ -50,9 +50,7 @@ public class Usuario {
         int contador = 0;
         if (prestamosActivos == null) {
             if (maximoPrestamosSimultaneos == 0) {
-                if (maximoPrestamosSimultaneos < 0) {
-                    return false;
-                } else if (maximoPrestamosSimultaneos > 0) {
+                if (maximoPrestamosSimultaneos > 0) {
                     return true;
                 }
             } else if (maximoPrestamosSimultaneos > 0) {
